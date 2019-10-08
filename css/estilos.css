@@ -1,5 +1,5 @@
 body{
-  font-family: sans-serif;
+  font-family: 'Dancing Script', cursive;
 }
 
 footer{
@@ -17,6 +17,7 @@ footer{
     box-sizing: border-box;
     min-width: 50px;
     padding: 5px;
+    background-color: #C6d5c5;
   }
 
 .contacto{
