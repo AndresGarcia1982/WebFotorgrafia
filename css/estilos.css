@@ -1,0 +1,59 @@
+body{
+  font-family: sans-serif;
+}
+
+footer{
+
+}
+
+.contenedor{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
+
+.contenedor div{
+    box-sizing: border-box;
+    min-width: 50px;
+    padding: 5px;
+  }
+
+.contacto{
+    color: black;
+    background-color: green;
+    border-bottom-left-radius: 10px;
+}
+.terminos{
+  color: black;
+  background-color: yellow;
+}
+
+.redesSociales{
+  color: black;
+  background-color: blue;
+}
+
+.derechos{
+  color: black;
+  background-color: red;
+  border-bottom-right-radius: 10px;
+}
+
+.contenedor{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+@media (min-width: 800px){
+  .contacto, .terminos, .redesSociales, .derechos{
+    width: 25%;
+  }
+  .contenedor{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
