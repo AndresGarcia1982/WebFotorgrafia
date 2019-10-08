@@ -15,7 +15,7 @@ footer{
 
 .contenedor div{
     box-sizing: border-box;
-    min-width: 50px;
+    min-width: 10px;
     padding: 5px;
     background-color: #C6d5c5;
   }
