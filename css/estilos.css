@@ -6,11 +6,84 @@ footer{
 
 }
 
-.contenedor{
+.contenedor .contenedorHeader{
   margin: 0;
   padding: 0;
   width: 100%;
 
+}
+
+.contenedorHeader div{
+  box-sizing: border-box;
+  min-width: 10px;
+  padding: 5px;
+  background-color: #5b7989;
+}
+
+.titulo{
+  color: white;
+  border-top-left-radius: 10px;
+  text-shadow: 2px 2px #02010a;
+}
+
+.menu{
+  border-top-right-radius: 10px;
+  align: center;
+  margin: 0 auto;
+}
+
+a{
+  outline: 0;
+  font-size: 1.5em;
+}
+
+a:link, a:visited{
+  color: white;
+  padding: 0 1px;
+}
+
+#inicioMenu{
+  text-decoration: none;
+}
+
+.menu nav{
+    height: 40px;
+    margin: 0 auto 2em auto;
+    padding: 0px;
+    text-align: center;
+    width: auto;
+}
+
+.menu nav ul{
+  list-style: none;
+  margin: 0 auto;
+  width: 800px;
+  padding-top: 4%;
+  padding-left: 300px;
+}
+
+.menu nav li{
+  float: left;
+  display: inline;
+  margin: 0;
+  width: 80px;
+}
+.contenedorHeader{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+@media (min-width: 800px){ /*Visualizacion pantalla Desktop*/
+  .titulo, .menu{
+    width: 50%;
+  }
+  .contenedorHeader{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .contenedor div{
@@ -22,22 +95,18 @@ footer{
 
 .contacto{
     color: black;
-    background-color: green;
     border-bottom-left-radius: 10px;
 }
 .terminos{
   color: black;
-  background-color: yellow;
 }
 
 .redesSociales{
   color: black;
-  background-color: blue;
 }
 
 .derechos{
   color: black;
-  background-color: red;
   border-bottom-right-radius: 10px;
 }
 
@@ -48,7 +117,7 @@ footer{
   flex-flow: row wrap;
 }
 
-@media (min-width: 800px){
+@media (min-width: 800px){ /*Visualizacion pantalla Desktop*/
   .contacto, .terminos, .redesSociales, .derechos{
     width: 25%;
   }
