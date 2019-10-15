@@ -60,7 +60,7 @@ header nav #sitioActual, header nav a:visited{
 }
 
 img{
-  box-shadow: 2px 2px 0 #02010a;
+  box-shadow: 2px 2px 2px 0 #02010a;
 }
 
 #imagenCentrada{
@@ -115,8 +115,37 @@ img{
   box-shadow: 2px #82c3a6;
 }
 
+.galeria{
+  background-color: #d5c75f;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 
+.galeria div{
+  padding: 1%;
+  width: 280px;
+}
 
+.galeria div img{
+  width: 90%;
+  margin: auto;
+}
+
+.galeria div:first-child img{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.galeria div:nth-child(even) img{
+  -webkit-filter: grayscale(100%);
+  filter: graysacale(100%);
+}
+
+.galeria div:nth-child(3) img{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
 
 footer{
   padding: 5% 2%;
@@ -151,4 +180,52 @@ footer img{
   100%{
     margin-top: 0%;
   }
+}
+
+@media all and (min-width: 900px) { /*estilo para desktop*/
+  .contenedorCentral{
+    width: 900px;
+  }
+  header h1{
+    width: 70%;
+  }
+  header nav{
+    width: 30%;
+  }
+  #imagenSecundaria div{
+    width: 50%;
+  }
+  .galeria div{
+    width: 31%;
+  }
+  footer div{
+    width: 25%;
+  }
+}
+
+@media (max-width: 900px) {
+  .contenedorCentral{
+    width: 100%;
+  }
+  header{
+    text-align: center;
+  }
+  header h1{
+    width: 100%;
+    margin: auto;
+  }
+  header nav{
+    width: 100%;
+    margin: auto;
+  }
+  #imagenSecundaria div{
+    width: 100%;
+  }
+  .galeria div{
+    width: 100%;
+  }
+  footer div{
+    width: 90%;
+  }
+
 }
