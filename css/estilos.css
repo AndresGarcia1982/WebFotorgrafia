@@ -26,7 +26,6 @@ header{
   padding: 10px 10px;
   display: flex;
   flex-flow: row wrap;
-  animation: slidein 2s;
 }
 
 header h1{
@@ -79,7 +78,7 @@ img{
   padding: 5% 2%;
   background-color: #d5c75f;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
 
 .imgSec{
@@ -216,7 +215,7 @@ footer img{
   }
   header nav{
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
   }
   #imagenSecundaria div{
     width: 100%;
@@ -226,6 +225,7 @@ footer img{
   }
   footer div{
     width: 90%;
+    text-align: center;
   }
 
 }
