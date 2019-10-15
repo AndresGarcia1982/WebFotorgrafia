@@ -35,8 +35,9 @@ header h1{
 }
 
 header nav{
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 1.3em;
+  margin-left: auto;
 }
 
 header a{
@@ -54,7 +55,7 @@ header nav li{
   margin: 5px;
 }
 
-header nav .sitioActual, header nav a:visited{
+header nav #sitioActual, header nav a:visited{
   text-decoration: none;
 }
 
@@ -70,7 +71,7 @@ img{
 
 #imagenCentrada img{
   width: 85%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 #imagenSecundaria{
@@ -78,7 +79,7 @@ img{
   padding: 5% 2%;
   background-color: #d5c75f;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
 }
 
 .imgSec{
@@ -94,6 +95,25 @@ img{
   color: black;
 }
 
+#secundariaPaisaje img{
+  transition-property: transform, box-shadow;
+  transition-duration: 1s, 1s;
+}
+
+#secundariaPaisaje img:hover{
+  transform: rotateZ(10deg);
+  box-shadow: 2px #82c3a6;
+}
+
+#secundariaRetrato img{
+  transition-property: transform, box-shadow;
+  transition-duration: 1s, 1s;
+}
+
+#secundariaRetrato img:hover{
+  transform: translateX(20px) translateY(-5px);
+  box-shadow: 2px #82c3a6;
+}
 
 
 
@@ -108,13 +128,27 @@ footer{
 
 footer div{
   margin: 0 auto;
+  text-align: center;
 }
 
 footer ul{
   list-style: none;
+  text-align: left;
 }
 
 footer img{
   height: 20px;
   width: 20px;
+}
+
+@-webkit-keyframes slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 }
