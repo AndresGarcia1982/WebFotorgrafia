@@ -26,6 +26,8 @@ header{
   padding: 10px 10px;
   display: flex;
   flex-flow: row wrap;
+  animation: slidein 2s;
+
 }
 
 header h1{
@@ -200,6 +202,9 @@ footer img{
   footer div{
     width: 25%;
   }
+  footer div li {
+    text-align: center;
+  }
 }
 
 @media (max-width: 900px) {
@@ -225,7 +230,8 @@ footer img{
   }
   footer div{
     width: 90%;
+  }
+  footer div li{
     text-align: center;
   }
-
 }
